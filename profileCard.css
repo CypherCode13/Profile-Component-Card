@@ -1,0 +1,105 @@
+*,*::before, *::after{
+    box-sizing: border-box;
+    font-family:  'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+    overflow: hidden;   
+    background-color:  hsl(189, 45%, 50%);
+}
+.mainContainer{
+    background-image: url(images/bg-pattern-card.svg) ;
+    background-position: top ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: white;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px; 
+    text-align: center; 
+}
+.photoSection{
+    margin-top: 113px;
+    letter-spacing: .1rem;
+}
+.statsSection{
+    letter-spacing: .1rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px; 
+}
+
+ .border{
+     border: .001rem solid lightgray;
+     margin-top: 45px;
+ }
+.profilePhoto{
+    border: 6px solid white;
+    border-radius: 50%; 
+}
+
+.footer{
+    position:fixed;
+    bottom: 10px;
+}
+
+/* background cirlce image styles */
+.backgroundImages{
+    position: relative;
+    
+}
+.topImage{
+    position: absolute;
+    bottom: -75px;
+    right: -140px;
+   
+}
+.bottomImage{
+    position: absolute;
+    top: -35px;
+    left: 200px;
+    z-index:-1;
+}
+
+/* text styles below */
+.age{
+    font-weight: 330;
+    padding-left: 8px;
+}
+.name{
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+.londonCity{
+    padding-top: 10px;
+    font-weight: 330;
+}
+.kays{
+    font-weight: 900;
+    padding-bottom: 5px;
+    font-size: 1.2rem;
+}
+.followers,
+.likes,
+.photos{
+    font-weight: 330;
+    font-size: .8rem;
+}
+@media only screen and  (min-width: 280px)  {
+
+    html, body {
+        overflow-x:hidden;
+        overflow-y: hidden;
+    }
+}
+
+
+
+
+
